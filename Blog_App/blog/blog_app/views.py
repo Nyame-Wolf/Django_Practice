@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 def home(request):
-    return HttpResponse("<h1>Blog Home</h1>")
+    return render(request,'blog_app/home.html')
 def about(request):
-    pass
+    return render(request,'blog_app/about.html')
